@@ -34,6 +34,6 @@ Henrique Sousa
 
 Miguel Monteiro
 
-Pedro Rito
+Pedro Figueiredo
 
 Renato Dias
