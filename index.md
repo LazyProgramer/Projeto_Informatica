@@ -26,8 +26,8 @@ When said prototype is ready, we will provide the link here.
 
 ### Team
 
-Daniel Francisco
-Henrique Sousa
-Miguel Monteiro
-Pedro Rito
+Daniel Francisco,
+Henrique Sousa,
+Miguel Monteiro,
+Pedro Rito,
 Renato Dias
