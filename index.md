@@ -38,9 +38,11 @@ When said prototype is ready, we will provide the link here.
 ### Architects
 - Daniel Francisco
 - Renato Dias
+
 ### Coordinators
 - Henrique Sousa
 - Pedro Figueiredo
+
 ### DevOps
 - Miguel Monteiro
 
