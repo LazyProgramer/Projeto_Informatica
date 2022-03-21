@@ -29,9 +29,7 @@ When said prototype is ready, we will provide the link here.
 
 ## Presentations
 
-1st Presentation:
-
-![](presentations/Milestone%201%20-%20Inception%20Phase.pdf)
+![1st Presentation](presentations/Milestone%201%20-%20Inception%20Phase.pdf)
 
 ## Calendar
 
