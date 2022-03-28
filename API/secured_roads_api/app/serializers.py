@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from . models import x
+from . models import alert
 
-class xSerializer(serializers.ModelSerializer):
+class alertSerializer(serializers.ModelSerializer):
     class Meta:
-        model = x
+        model = alert
         fields = '__all__'

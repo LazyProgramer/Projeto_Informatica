@@ -20,5 +20,5 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('xs/', views.xList.as_view()),
+    path('alerts/', views.alertList.as_view()),
 ]
