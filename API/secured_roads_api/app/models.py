@@ -2,7 +2,7 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
-class alert(models.Model):
+class Alert(models.Model):
     source = models.CharField(max_length=100)
     #max length for title + description = tweet length
     title = models.CharField(max_length=50)
@@ -17,4 +17,3 @@ class alert(models.Model):
 
     def __str__(self):
         return self.title
-
