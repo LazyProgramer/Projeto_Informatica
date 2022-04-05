@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'secured_roads_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'djongo',
         'NAME': 'secured_roads',
-        'USER': 'admin',
-        'PASSWORD': 'pi_2122_g2',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://admin:pi_2122_g2@securedroads.zzk6t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+            }  
+        }
     }
-}
 
 
 # Password validation
