@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'secured_roads',
         'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://admin:pi_2122_g2@securedroads.zzk6t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+                'host': 'mongodb+srv://secured_roads_admin:pi_2122_g2@securedroads.zzk6t.mongodb.net/SecuredRoads?retryWrites=true&w=majority'
             }  
         }
     }
