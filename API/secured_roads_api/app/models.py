@@ -3,6 +3,8 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class Alert(models.Model):
+    #TODO: do something like enum(?)
+    type = models.CharField(max_length=100)
     source = models.CharField(max_length=100)
     #max length for title + description = tweet length
     title = models.CharField(max_length=50)
