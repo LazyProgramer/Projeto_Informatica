@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('alerts/', views.alertList.as_view()),
     path('alerts/', views.alert_list),
-    path('alerts/<str:id>', views.getAlertById),
+    path('alert', views.getAlertById),
+    path('alerts', views.getAlertByLevel),
 ]
