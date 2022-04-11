@@ -61,10 +61,6 @@ When said prototype is ready, we will provide the link here.
 
 ## Repositories
 
-#### FrontEnd
+[FrontEnd](https://code.nap.av.it.pt/atcll/dev/atcll-frontend)
 
-https://code.nap.av.it.pt/atcll/dev/atcll-frontend
-
-#### BackEnd
-
-https://code.nap.av.it.pt/atcll/dev/citymanager-backend/
+[BackEnd](https://code.nap.av.it.pt/atcll/dev/citymanager-backend/)
