@@ -31,6 +31,8 @@ When said prototype is ready, we will provide the link here.
 
 [1st Presentation](https://lazyprogramer.github.io/Secured_Roads/presentations/Milestone%201%20-%20Inception%20Phase.pdf)
 
+[2st Presentation](https://lazyprogramer.github.io/Secured_Roads/presentations/Milestone%202%20-%20Elaboration%20Phase.pdf)
+
 ## Calendar
 
 ![](images/Calendario_1.png)
@@ -56,3 +58,13 @@ When said prototype is ready, we will provide the link here.
 - Susana Sargento
 - Pedro Rito
 - Ana Almeida
+
+## Repositories
+
+#### FrontEnd
+
+https://code.nap.av.it.pt/atcll/dev/atcll-frontend
+
+#### BackEnd
+
+https://code.nap.av.it.pt/atcll/dev/citymanager-backend/
