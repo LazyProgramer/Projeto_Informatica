@@ -53,14 +53,14 @@
                         <label for="uID"><b>Tipo</b></label>
                         <input type="text" placeholder="Type of alert" name="Tipo" id="Tipo" required>
                         <br>
-                        <label for="uID"><b>Hora</b></label>
-                        <input type="text" placeholder="Hora do incidente" name="Hora" id="Hora" required>
+                        <label for="uID"><b>Gravidade</b></label>
+                        <input type="text" placeholder="Gravidade do Incidente" name="Hora" id="Hora" required>
                         <br>
                         <label for="uID"><b>Descrição</b></label>
                         <input type="text" placeholder="Pequena descrição" name="Descricao" id="Descricao">
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit alert</button>
+                <button type="button" class="btn btn-primary" onclick="submitAlert();">Submit alert</button>
                 </div>
             </div>
             </div>
@@ -80,7 +80,14 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+            <div class="container">
+
+                <label for="uname"><b>Localização</b></label>
+                <input type="text" placeholder="Location" name="local" id="local" required>
+                <br>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="filterAlert();">Filter alerts</button>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -94,7 +101,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
        <script>
                 function showAlerts(alerts) {
-                    console.log("hello");
                     var cards = "";
                     for (var alert of alerts) {
                         cards += 
@@ -111,6 +117,16 @@
                     }
                     $('#alerts').html(cards);
                 }
+
+                function showallAlerts() {
+                    $.ajax({
+                        url: 'http://127.0.0.1:8080/alerts',
+                        type: 'GET',
+                        success: function(alerts) {
+                            showAlerts(alerts);
+                        }
+                    });
+                }
                 
                 (function worker() {
                     $.ajax({
@@ -120,10 +136,38 @@
                         },
                         complete: function() {
                             // Schedule the next request when the current one's complete
-                            setTimeout(worker, 1000);
+                            setTimeout(worker, 100000);
                         }
                     });
                 })();
+
+                function filterAlert() {
+                    var local = $('#local').val();
+                    var Tipo = $('#Tipo').val();
+                    var Hora = $('#Hora').val();
+                    var Descricao = $('#Descricao').val();
+                    $.ajax({
+                        url: "http://127.0.0.1:8000/alerts?location=" + local,
+                        type: "GET",
+                    }).done(function (data) {
+                        console.log(data);
+                        showAlerts(data);
+                    });
+                }
+
+                function submitAlert() {
+                    var local = $('#local').val();
+                    var Tipo = $('#Tipo').val();
+                    var Hora = $('#Hora').val();
+                    var Descricao = $('#Descricao').val();
+                    $.ajax({
+                        url: "http://127.0.0.1:8000/alert?type=" + Tipo + "&location=" + local + "&description=" + Descricao + "&level=" + Hora,
+                        type: "POST",
+                    }).done(function (data) {
+                        console.log(data);
+                        showallAlerts();
+                    });
+                }
        </script>
     
     </body>
