@@ -14,9 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 table, th, td {
   border-collapse: collapse;
 }
-th, td {
+th{
   padding: 15px;
-  text-align: center;
 }
 </style>
 </head>
@@ -101,75 +100,66 @@ th, td {
       <tr>
         <td>Definir as arquiteturas e frameworks a utilizar</td>
         <td>  05/04/2022  </td>
-        <td>&#10003;</td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
         <td>Criar o bot do twitter e recolher tweets com certas keywords</td>
         <td>19/04/2022</td>
-        <td>&#10003;</td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
         <td>Iniciar o desenvolvimento da API e restante backend para a plataforma de geração de alertas</td>
         <td>19/04/2022</td>
-        <td>&#10003;</td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
         <td>Processar os dados dos sensores para a geração de alertas</td>
         <td><s>19/04/2022</s> <br>03/05/2022
         </td>
-        <td>&#10003;</td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
         <td>Desenvolver a interface da plataforma</td>
         <td><s>19/04/2022</s> <br>03/05/2022
         </td>
-        <td>&#10003;</td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
         <td>Protótipo funcional da plataforma de geração de alertas e bot do twitter a gerar ‘dummy alerts’ e alguns alertas reais (vindos dos sensores) sendo possível visualizar todo o flow do sistema</td>
         <td>03/05/2022<br><b>Milestone 3</b>
         </td>
-        <td>&#10003;</td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
         <td>Implementar modelos de ML aos tweets e melhorar a seleção de tweets</td>
-        <td>24/05/2022
-        </td>
-        <td></td>
+        <td>24/05/2022</td>
+        <td style="text-align: center;"></td>
       </tr>
       <tr>
         <td>Implementar modelos de ML aos dados dos sensores</td>
-        <td>24/05/2022
-        </td>
-        <td></td>
+        <td>24/05/2022</td>
+        <td style="text-align: center;"></td>
       </tr>
       <tr>
         <td>Ter o sistema completamente ligado aos sensores do OpenLab <br>
-          Eliminar quaisquer “dummy alerts”
-          </td>
-        <td>31/05/2022
-        </td>
-        <td></td>
+          Eliminar quaisquer “dummy alerts”</td>
+        <td>31/05/2022</td>
+        <td style="text-align: center;"></td>
       </tr>
       <tr>
         <td>Finalizar o desenvolvimento do sistema</td>
-        <td>14/06/2022
-        </td>
-        <td></td>
+        <td>14/06/2022</td>
+        <td style="text-align: center;"></td>
       </tr>
       <tr>
-        <td>Demo + poster para students@deti & video
-        </td>
-        <td>14/06/2022
-        </td>
-        <td></td>
+        <td>Demo + poster para students@deti & video</td>
+        <td>14/06/2022</td>
+        <td style="text-align: center;"></td>
       </tr>
       <tr>
-        <td>Apresentação Final do Projeto
-        </td>
-        <td>21/06/2022<br><b>Milestone 4</b>
-        </td>
-        <td></td>
+        <td>Apresentação Final do Projeto</td>
+        <td>21/06/2022<br><b>Milestone 4</b></td>
+        <td style="text-align: center;"></td>
       </tr>
     </table>
     <img class="center_img" src="images/Calendario_2.png" width="100%">
@@ -181,29 +171,44 @@ th, td {
   <div class="w3-container w3-padding-64" style="text-align: center;" id="team">
     <h1>Team</h1><br>
     <h2 id="dev-team">Dev Team</h2>
-
-    <table style="width: 100%;">
-      <tr>
-        <th colspan="2"><h3>Architects</h3></th>
-        <th><h3>DevOps</h3></th>
-        <th colspan="2"><h3>Coordinators</h3></th>
-      </tr>
-      <tr>
-        <td><h6>Daniel Francisco</h6></td>
-        <td><h6>Renato Dias</h6></td>
-        <td><h6>Miguel Monteiro</h6></td>
-        <td><h6>Henrique Sousa</h6></td>
-        <td><h6>Pedro Figueiredo</h6></td>
-      </tr>
-    </table>
-    <h2 id="advisors">Advisors</h2> 
-    <table style="width: 100%;">
-      <tr>
-        <td><h6>Susana Sargento</h6></td>
-        <td><h6>Pedro Rito</h6></td>
-        <td><h6>Ana Almeida</h6></td>
-      </tr>
-    </table>
+    <div>
+      <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+        <h3>Architects</h3>
+        <table>
+          <tr>
+            <td><h6>Daniel Francisco</h6></td>
+            <td><h6>Renato Dias</h6></td>
+          </tr>
+        </table>
+      </div>
+      <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+        <h3>DevOps</h3>
+        <h6>Miguel Monteiro</h6>
+      </div>
+      <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+        <h3>Coordinators</h3>
+        <table>
+          <tr>
+            <td><h6>Henrique Sousa</h6></td>
+            <td><h6>Pedro Figueiredo</h6></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h2 id="advisors">Advisors</h2>
+      <div>
+        <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+          <h6>Susana Sargento</h6>
+        </div>
+        <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+          <h6>Pedro Rito</h6>
+        </div>
+        <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+          <h6>Ana Almeida</h6>
+        </div>
+      </div>
+    </div>
   </div>
   
 </div>
@@ -213,24 +218,37 @@ th, td {
         <h2 id="presentations-tittle">Presentations</h2>
 
         <a href="https://lazyprogramer.github.io/Secured_Roads/presentations/Milestone%201%20-%20Inception%20Phase.pdf">
-            <img src="images/pdf.png" width="25px" alt="1st_Presentation"> 1st Presentation
+          <img src="images/pdf.png" width="35px" alt="1st_Presentation"> 1st Presentation
         </a>
-        <p></p>
+        <br>
         <a href="https://lazyprogramer.github.io/Secured_Roads/presentations/Milestone%202%20-%20Elaboration%20Phase.pdf">
-            <img src="images/pdf.png" width="25px" alt="2nd_Presentation"> 2nd Presentation
+          <img src="images/pdf.png" width="35px" alt="2nd_Presentation"> 2nd Presentation
         </a>
+        <br>
+        <a href="https://lazyprogramer.github.io/Secured_Roads/presentations/Milestone%203%20-%20Elaboration%20Phase.pdf">
+          <img src="images/pdf.png" width="35px" alt="2nd_Presentation"> 2nd Presentation
+      </a>
     </div>
     <div class="w3-col m6 w3-padding-large">
         <h2 id="repositories-tittle">Repositories</h2>
-        <a href="https://github.com/LazyProgramer/Secured_Roads" class="btn">
+        <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+          <a href="https://github.com/LazyProgramer/Secured_Roads" class="btn">
+            <h6>WebSite</h6>
             <img style="padding: 10px;" src="images/GitHub.png" alt="GitHub" width="75px">
-        </a>
-        <a href="https://code.nap.av.it.pt/atcll/dev/atcll-frontend">
+          </a>
+        </div>
+        <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+          <a href="https://code.nap.av.it.pt/atcll/dev/atcll-frontend">
+            <h6>FrontEnd</h6>
             <img style="padding: 10px;" src="images/GitLab.png" alt="GitLab FrontEnd" width="100px">
-        </a>                   
-        <a href="https://code.nap.av.it.pt/atcll/dev/citymanager-backend/">
+          </a>                   
+        </div>
+        <div style="float: left;width: 33.33%;padding: 10px;text-align: center;">
+          <a href="https://code.nap.av.it.pt/atcll/dev/citymanager-backend/">
+            <h6>BackEnd</h6>
             <img style="padding: 10px;" src="images/GitLab.png" alt="GitLab BackEnd" width="100px">
-        </a>
+          </a>
+        </div>
     </div>
 </div>
 
