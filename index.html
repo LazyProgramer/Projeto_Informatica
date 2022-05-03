@@ -11,6 +11,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+table, th, td {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -94,30 +101,29 @@ h1, h2, h3, h4, h5, h6 {
   <div class="w3-container w3-padding-64" style="text-align: center;" id="team">
     <h1>Team</h1><br>
     <h2 id="dev-team">Dev Team</h2>
-        <h3 id="architects">Architects</h3>
-        <ul>
-            <li>Daniel Francisco</li>
-            <li>Renato Dias</li>
-        </ul>
-        
-        <h3 id="coordinators">Coordinators</h3>
-        <ul>
-            <li>Henrique Sousa</li>
-            <li>Pedro Figueiredo</li>
-        </ul>
-        <h3 id="devops">DevOps</h3>
 
-        <ul>
-            <li>Miguel Monteiro</li>
-        </ul>
-
-        <h2 id="advisors">Advisors</h2> 
-                       
-        <ul>
-            <li>Susana Sargento</li>
-            <li>Pedro Rito</li>
-            <li>Ana Almeida</li>
-        </ul>
+    <table style="width: 100%;">
+      <tr>
+        <th colspan="2"><h3>Architects</h3></th>
+        <th><h3>DevOps</h3></th>
+        <th colspan="2"><h3>Coordinators</h3></th>
+      </tr>
+      <tr>
+        <td><h6>Daniel Francisco</h6></td>
+        <td><h6>Renato Dias</h6></td>
+        <td><h6>Miguel Monteiro</h6></td>
+        <td><h6>Henrique Sousa</h6></td>
+        <td><h6>Pedro Figueiredo</h6></td>
+      </tr>
+    </table>
+    <h2 id="advisors">Advisors</h2> 
+    <table style="width: 100%;">
+      <tr>
+        <td><h6>Susana Sargento</h6></td>
+        <td><h6>Pedro Rito</h6></td>
+        <td><h6>Ana Almeida</h6></td>
+      </tr>
+    </table>
   </div>
   
 </div>
