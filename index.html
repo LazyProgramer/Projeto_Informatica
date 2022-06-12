@@ -44,25 +44,29 @@ th{
   </div>
 </header>
 
+<section class="showcase">
+  <video src="video/securedroads.mp4" autoplay loop muted></video>
+</section>
+
 <div class="w3-content" style="max-width:1100px">
 
   <div class="w3-row w3-padding-64" id="home">
       <h1 class="w3-center">What is Secured Roads</h1><br>
-      <p class="w3-large">Secured Roads is a project that seeks to improve the safety of the city of Aveiro by providing the community with information about the city roads in real-time. It alerts when there is transit detected by ATCLL Sensors or something has been reported via twitter by the community. This is possible thanks to the support of Aveiro Open Lab and machine learning technology.</p>
+      <p class="w3-large">Secured Roads is a project that seeks to improve the safety of the city of Aveiro by providing the community with information about the city roads in real-time. It alerts when there is traffic detected by ATCLL Sensors or something has been reported via twitter by the community. This is possible thanks to the support of <a href="https://aveiro-living-lab.it.pt/citymanager" target="_blank">Aveiro Open Lab</a> and machine learning technology.</p>
   </div>
   
   <hr>
 
   <div class="w3-row w3-padding-64" id="how-it-works">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-      <img src="images/Tweet.png" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+      <a href="https://twitter.com/securedroads" target="_blank"><img src="images/Tweet.png" style='border:1px solid #000000' class="w3-round w3-image" alt="Table Setting" width="600" height="750"></a>
     </div>
    
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">How it works</h1><br>
-      <p class="w3-large"></p>To provide authorities with the road's state in real-time, Secured Roads utilises the Smart Lamp Post (SLP) created and built by Aveiro Open Lab to check the state of the roads. To do this, it uses the information provided by the radars of the SLP to conclude if there is a traffic jam.
+      <p class="w3-large"></p>To provide authorities with the road's state in real-time, Secured Roads utilises the Smart Lamp Post (SLP) created and built by Aveiro Open Lab to check the state of the roads. To do this, it uses the information provided by the radars and cameras of the SLP to conclude if there is a traffic jam.
         <br>
-          It can also notify them if someone has broken the law or if there has been an accident. It does this by utilising the radars and cameras provided by SLP as well as Twitter posts in conjunction with image and text recognition.
+          It can also notify them if someone has broken the law or if there has been an accident. It does this by utilising the radars and cameras provided by SLP as well as Twitter posts.
         <br>
           Thanks to all this, Secured Roads can make the roads of Aveiro just a bit safer. </p>
                 
@@ -74,15 +78,13 @@ th{
   <div class="w3-row w3-padding-64" id="how-to-use">
       <div class="w3-col m6 w3-padding-large">
         <h1 class="w3-center">How to use</h1><br>
-        <p class="w3-large"></p>We plan to launch a webapp that will provide users with information of the state of the roads of Aveiro.
+        <p class="w3-large"></p>Our alerts are published on the Aveiro Open Lab website <a href="https://dev.aveiro-open-lab.pt/securedroads" target="_blank">Secured Roads Page</a> and in the bot twitter account <a href="https://twitter.com/securedroads" target="_blank">@securedroads</a>.
         <br>
-                Sadly, Secured Roads is still in its early stages of development, therefore it still isn't fully operational.
-        <br>
-                We are expecting to have a working prototype by the end of June.</p>
+                If you wish to report some incident in Aveiro you could just tweet it or follow the #SecuredRoads twitter <a href="https://twitter.com/SecuredRoads/status/1515409820656058373" target="_blank">report format</a> that you can find on the twitter page. If you don't follow the format make sure to include "Aveiro" in your tweet so that our bot can be sure that your report is from Aveiro.</p>
             </div>
 
       <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="images/traffic_ex.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+        <a href="https://dev.aveiro-open-lab.pt/securedroads" target="_blank"><img src="images/traffic_ex.png" style='border:1px solid #000000' class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750"> </a>
       </div>
   </div>
 
@@ -99,72 +101,72 @@ th{
         <th>Completed</th>
       </tr>
       <tr>
-        <td>Definir as arquiteturas e frameworks a utilizar</td>
+        <td>Define the architectures and frameworks to be used</td>
         <td>  05/04/2022  </td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Criar o bot do twitter e recolher tweets com certas keywords</td>
+        <td>Create twitter bot and collect tweets with certain keywords</td>
         <td>19/04/2022</td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Iniciar o desenvolvimento da API e restante backend para a plataforma de geração de alertas</td>
+        <td>Start API development and rest of the backend for the alerting platform</td>
         <td>19/04/2022</td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Processar os dados dos sensores para a geração de alertas</td>
+        <td>Process sensor data to generate alerts</td>
         <td><s>19/04/2022</s> <br>03/05/2022
         </td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Desenvolver a interface da plataforma</td>
+        <td>Develop the platform interface</td>
         <td><s>19/04/2022</s> <br>03/05/2022
         </td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Protótipo funcional da plataforma de geração de alertas e bot do twitter a gerar ‘dummy alerts’ e alguns alertas reais (vindos dos sensores) sendo possível visualizar todo o flow do sistema</td>
+        <td>Functional prototype of the platform for generating alerts and twitter bot generating 'dummy alerts' and some real alerts (coming from the sensors) making it possible to visualize the entire flow of the system</td>
         <td>03/05/2022<br><b>Milestone 3</b>
         </td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Implementar modelos de ML aos tweets e melhorar a seleção de tweets</td>
+        <td>Implement ML models to the tweets and improve tweet selection</td>
         <td>24/05/2022</td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td> <s>Implementar modelos de ML aos dados dos sensores</s> </br>
-        Efetuar análises mais inteligentes aos dados dos sensores e preparar os dados para um modelo de ML</td>
+        <td> <s>Implement ML models to sensor data</s> </br>
+        Perform smarter analysis on sensor data and prepare the data for an ML model</td>
         <td>24/05/2022</td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Ter o sistema completamente ligado aos sensores do OpenLab <br>
-          Eliminar quaisquer “dummy alerts”</td>
+        <td>System Fully Connected to OpenLab infrastructure<br>
+         Remove “dummy alerts”</td>
         <td><s>31/05/2022</s> <br>24/05/2022 </td>
         <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Finalizar o desenvolvimento do sistema</td>
+        <td>Finish System Development</td>
         <td>14/06/2022</td>
-        <td style="text-align: center;"></td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Demo + poster para students@deti & video</td>
+        <td>Demo and poster for students@deti & video</td>
         <td>14/06/2022</td>
-        <td style="text-align: center;"></td>
+        <td style="text-align: center;">&#10003;</td>
       </tr>
       <tr>
-        <td>Apresentação Final do Projeto</td>
+        <td>Final Project Presentation</td>
         <td>21/06/2022<br><b>Milestone 4</b></td>
         <td style="text-align: center;"></td>
       </tr>
     </table>
-    <img class="center_img" src="images/Calendario_2.png" width="100%">
+    <!--<img class="center_img" src="images/Calendario_2.png" width="100%">-->
   </div>
 
   <br>
